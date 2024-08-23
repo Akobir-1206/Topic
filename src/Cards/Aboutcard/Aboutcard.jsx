@@ -1,5 +1,5 @@
 import React from 'react'
-import '../About-card/aboutcard.css'
+import './Aboutcard.css'
 export default function Aboutcard(props) {
   return (
 <div>

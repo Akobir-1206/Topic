@@ -14,7 +14,9 @@ export default function Result() {
                     <Marquee speed={100} direction='right'>
                         <div className="result__sertif"> <img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /></div>
                     </Marquee>
+                    <button className='result__btn'>ARIZA QOLDIRISH</button>
                 </div>
+                
             </div>
         </div>
     )

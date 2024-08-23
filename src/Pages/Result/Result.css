@@ -28,3 +28,17 @@
     display: flex;
     gap: 9px;
 }
+.result__btn{
+    width: 280px;
+    height: 70px;
+    background-color: #418E8B;
+    border-radius: 59px;
+    border: 1px solid #418E8B;
+    color: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 23px 22px 22px 22px;
+    margin-left: 40%;
+}

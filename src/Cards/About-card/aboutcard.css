@@ -1,0 +1,30 @@
+.aboutcard {
+    /* gap: 30px; */
+}
+
+.card__img {
+    background-image: url(background.svg);
+    background-size: cover;
+    width: 163.41px;
+    height: 163.41px;
+    top: 892px;
+    /* left: 517.31px; */
+    /* gap: 0px;
+    opacity: 0px; */
+    margin-left: 25%
+
+}
+
+.card__p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18.82px;
+    font-weight: 400;
+    line-height: 23.3px;
+    text-align: center;
+    width: 289.17px;
+    height: 46px;
+    top: 1072.52px;
+    left: 454px;
+    gap: 0px;
+    opacity: 0px;
+}

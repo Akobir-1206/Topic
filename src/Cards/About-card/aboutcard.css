@@ -1,17 +1,20 @@
 .aboutcard {
-    /* gap: 30px; */
+    background-image: url(background.svg);
+    background-size: cover;
+    width: 165px;
+    height: 165px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 19%;
 }
 
 .card__img {
-    background-image: url(background.svg);
-    background-size: cover;
-    width: 163.41px;
-    height: 163.41px;
-    top: 892px;
-    /* left: 517.31px; */
-    /* gap: 0px;
-    opacity: 0px; */
-    margin-left: 25%
+
+    width: 103.41px;
+    height: 103.41px;
+
+    
 
 }
 

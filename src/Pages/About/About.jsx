@@ -1,7 +1,6 @@
 import React from 'react'
 import '../About/About.css'
-import barg from '../../assets/barg.png'
-import Aboutcard from '../../Cards/About-card/Aboutcard'
+import Aboutcard from '../../Cards/About-card/aboutcard'
 import sms from '../../assets/sms.svg'
 import rocket from '../../assets/rocket.svg'
 import money from '../../assets/money.svg'
@@ -17,7 +16,6 @@ export default function About() {
        <div className="container">
             <div className="about__container">
                  <h1 className='about__name'>TOPIK academy aniq siz uchun agar siz:</h1>
-                 <img className='barg1' src={barg} alt="" />
                  <div className="about__cards">
                     <Aboutcard  img={sms} about="Qisqa muddat ichida Koreys tilida gapirishni istaysiz"  />
                     <Aboutcard  img={rocket} about="Koreys tili o’rganib o’z karyerangizni qurmoqchisiz"/>
@@ -26,7 +24,6 @@ export default function About() {
                     <Aboutcard  img={arrow} about="Koreys tilini o’rta darajda bilasiz va darajangizni oshirmoqchisiz"/>
                     <Aboutcard  img={key} about="Ko’p yillardan buyon o’qib ham natijaga chiqa olmayapsiz"/>
                  </div>
-                 <img className='barg2' src={barg} alt="" />
                  <button className='about__button'>Ha, Bu Men</button>
             </div>
        </div>

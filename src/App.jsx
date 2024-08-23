@@ -3,7 +3,7 @@ import './App.css'
 import Navigate from './Pages/Navigate/Navigate'
 import Header from './Pages/Header/Header'
 import About from './Pages/About/About'
-import aboutcard from './Cards/About-card/Aboutcard'
+import Result from './Pages/Result/Result'
 function App() {
 
 
@@ -12,7 +12,7 @@ function App() {
       <Navigate/>
       <Header/>
       <About/>
-      <aboutcard/>
+      <Result/>
       
     </>
   )

@@ -1,0 +1,23 @@
+.information{
+    padding: 40px;
+}
+.information__card{
+    padding: 30px;
+    width: 1200px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.information__title{
+    width: 602px;
+height: 44px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 36px;
+font-weight: 400;
+line-height: 43.67px;
+text-align: center;
+margin-left: 25%;
+
+
+}

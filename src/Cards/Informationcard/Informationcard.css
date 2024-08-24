@@ -1,0 +1,71 @@
+.informationcard {
+    width: 380px;
+    height: 340px;
+    top: 5625px;
+    left: 360px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+    
+
+}
+
+.informationcard__container {
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #E9F5FF, 0 0 25px #E9F5FF, 0 0 5px #E9F5FF ;
+}
+
+.informationcard__box {
+    
+    width: 75px;
+    height: 75px;
+    top: 5625px;
+    left: 385px;
+    gap: 0px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0px;
+    background: #61ABA7;
+
+}
+
+.informationcard__number {
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 61.25px;
+    text-align: center;
+    padding: 8px;
+
+}
+.informationcard__name{
+    width: 375px;
+height: 30px;
+top: 5728px;
+left: 385px;
+gap: 0px;
+opacity: 0px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+margin-left: 19px;
+
+}
+.informationcard__text{
+    width: 329px;
+height: 81px;
+top: 5791px;
+left: 385px;
+gap: 0px;
+opacity: 0px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 18px;
+font-weight: 450;
+line-height: 27px;
+text-align: left;
+margin-left: 19px;
+letter-spacing: 1px;
+
+}

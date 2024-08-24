@@ -1,5 +1,6 @@
 import React from 'react'
 import './Aboutcard.css'
+
 export default function Aboutcard(props) {
   return (
 <div>

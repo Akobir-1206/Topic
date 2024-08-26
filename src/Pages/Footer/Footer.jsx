@@ -15,9 +15,9 @@ export default function Footer() {
                    </ul>
                    <ul className='footer__centerlist'>
                         <li className='footer__centeritem'><a className='footer__centerlink' href="#">Nega biz</a></li>
-                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Nega biz</a></li>
-                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Nega biz</a></li>
-                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Nega biz</a></li>
+                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Natijalar</a></li>
+                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Savollar</a></li>
+                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Kurslar</a></li>
                    </ul>
                    <ul className='footer__righlist'>
                       <li className='footer__rightitem'><img src={phone} alt="" /></li>

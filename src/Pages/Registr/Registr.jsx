@@ -7,7 +7,7 @@ import img3 from '../../assets/img3.svg'
 
 export default function Registr() {
   return (
-    <div className='registr'>
+    <div className='registr' id='kurs'>
           <div className="container">
              <div className="registr__container">
                   <h1 className='registr__title'>O’zingizga mos kursga ro’yxatdan o’ting</h1>

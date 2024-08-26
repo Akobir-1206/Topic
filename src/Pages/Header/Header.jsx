@@ -19,7 +19,7 @@ export default function Header() {
                         o’qish va ishlash imkoniyati</p></div>
                         </li>
                     </ul>
-                    <button className='button'>bepul Darsga yozilish</button>
+                    <button className='button'><a className='header__link' href="#kurs">bepul Darsga yozilish</a></button>
                     <p className='header__text'>Birinchi darsga bepul yoziling!</p>
                 </div>
                 <div className="header__right">

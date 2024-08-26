@@ -3,17 +3,19 @@ import '../Information/Information.css'
 import Informationcard from '../../Cards/Informationcard/Informationcard'
 export default function Information() {
     return (
-        <div className='information'>
+        <div className='information' id='info'>
             <div className="container">
                 <div className="information__container">
                     <h1 className='information__title'>Nima uchun aynan TOPIK academy?</h1>
 
                     <div className="information__card">
+                        <div className="divv">
                         <Informationcard
                             number={"01"}
                             name={"Professional ustozlar"}
                             text={"Sizga 4 yildan ortiq tajriba va Topik darajasi 6 bo’lgan o’qituvchilar dars beradi"}
                         />
+                        </div>
                         <Informationcard
                             number={"02"}
                             name={"Bepul coworking zonalari"}

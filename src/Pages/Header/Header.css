@@ -109,3 +109,7 @@
     text-align: left;
     margin-left: 80px;
 }
+.header__link{
+    text-decoration: none;
+    color: white;
+}

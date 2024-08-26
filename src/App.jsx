@@ -8,6 +8,8 @@ import Grant from './Pages/Grant/Grant'
 import Registr from './Pages/Registr/Registr'
 import Information from './Pages/Information/Information'
 import Accordion from './Pages/Akkordion/Akkordion'
+import Question from './Pages/Question/Question'
+import Footer from './Pages/Footer/Footer'
 function App() {
 
 
@@ -20,7 +22,8 @@ function App() {
       <Grant/>
       <Registr/>
       <Information/>
-      <Accordion/>
+      <Question/>
+      <Footer/>
     </>
   )
 }

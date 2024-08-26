@@ -6,17 +6,17 @@
     max-width: 1200px;
 }
 .result__name {
-    width: 729px;
+    width: 789px;
     height: 44px;
     top: 1661px;
     left: 596px;
     gap: 0px;
     opacity: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 450;
     line-height: 43.67px;
-    margin-left: 5%;
+    margin-left: 19%;
 }
 
 .result__img {

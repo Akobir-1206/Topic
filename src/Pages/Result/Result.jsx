@@ -4,8 +4,9 @@ import Marquee from "react-fast-marquee";
 import sertif from '../../assets/sertif.svg'
 import axios from 'axios';
 import { Modal } from 'antd';
+import { useTranslation } from 'react-i18next';
 export default function Result() {
-
+    const {t, i18n} = useTranslation();
     const [loading, setLoading] = useState(false)
     const [open, setOpen] = useState(false);
     const closeModal = () => {
@@ -49,22 +50,22 @@ export default function Result() {
         <div className='result' id='result'>
             <div className="container">
                 <div className="result__container">
-                    <h1 className='result__name'>O’quvchilarimizning natijalari TOPIK 6 gacha</h1>
+                    <h1 className='result__name'>{t('result.text')}</h1>
                     <Marquee speed={100}>
                         <div className="result__sertif"> <img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /></div>
                     </Marquee>
                     <Marquee speed={100} direction='right'>
                         <div className="result__sertif"> <img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /><img className='result__img' src={sertif} alt="" /></div>
                     </Marquee>
-                    <button className='result__btn' onClick={openModal}>ARIZA QOLDIRISH</button>
+                    <button className='result__btn' onClick={openModal}>{t('result.text1')}</button>
                 </div>
                 <Modal title='' open={open} footer={null} onCancel={closeModal}>
                     <form action="">
-                        <h1 className='registrmodal__title'>Intensive</h1>
-                        <p className='registrmodal__text'>Bepul darsga o'z joyingizni band qilish uchun ma'lumotlaringizni qoldiring va biz siz bilan tez orada bog'lanamiz</p>
+                        <h1 className='registrmodal__title'>{t('modal.text')}</h1>
+                        <p className='registrmodal__text'>{t('modal.text1')}</p>
                     </form>
-                    <input className='question__name' type="text" id='name' placeholder='Ismingiz' required />
-                    <input className='question__number' type="number" name="" id="number" placeholder='+998' />
+                    <input className='question__name' type="text" id='name' placeholder={t('modal.text2')} required />
+                    <input className='question__number' type="number" name="" id="number" placeholder='+998' required/>
                     <button type='submit' loading={loading} className='question__btn' onClick={SendMessage}>{loading ? "Yuborilmoqda..." : "ARIZA QOLDIRISH"}</button>
                 </Modal>
             </div>

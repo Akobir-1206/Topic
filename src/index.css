@@ -8,5 +8,6 @@ html{
 }
 .grey{
     color:#ABDDB1;
-    ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }

@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import '../Registrcard/Registrcard.css'
-import { Modal } from 'antd';
+import { message, Modal } from 'antd';
 
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 export default function Registrcard(props) {
+     
 
   const [loading, setLoading] = useState(false)
   const [open, setOpen] = useState(false);
   const closeModal = () => {
     setOpen(false);
   };
-
+   
   const openModal = () => {
     setOpen(true);
   };
@@ -43,29 +45,36 @@ export default function Registrcard(props) {
       closeModal(true)
     })
   }
-
+  const {t, i18n} = useTranslation();
   return (
     <div className='registrcard'>
       <div className="registrcard__container">
         <img className='registrcard__img' src={props.img} alt="" />
         <ul className='registrcard__list'>
           <li className='registrcard__item'><h3 className='registrcard__name'>{props.name}</h3></li>
-          <li className='registrcard__item'><button className='registrcard__btn'>Davomiyligi: 5 oy</button></li>
+          <li className='registrcard__item'><button className='registrcard__btn'>{t('registr.text10')}</button></li>
         </ul>
         <p className='registrcard__text'>{props.text}</p>
         <ul className='registrcard__secondlist'>
-          <li className='registrcard__seconditem'><button className='registrcard__button' onClick={openModal}>Ro’yxatdan o’tish</button></li>
+          <li className='registrcard__seconditem'><button className='registrcard__button' onClick={openModal}>{t('registr.text11')}</button></li>
           <li className='registrcard__seconditem'><p className='registrcard__price'>{props.price}</p></li>
         </ul>
       </div>
       <Modal title='' open={open} footer={null} onCancel={closeModal}>
         <form action="">
-          <h1 className='registrmodal__title'>Intensive</h1>
-          <p className='registrmodal__text'>Bepul darsga o'z joyingizni band qilish uchun ma'lumotlaringizni qoldiring va biz siz bilan tez orada bog'lanamiz</p>
+          <h1 className='registrmodal__title'>{t('modal.text')}</h1>
+          <p className='registrmodal__text'>{t('modal.text1')}</p>
         </form>
-        <input className='question__name' type="text" id='name' placeholder='Ismingiz' required />
-        <input className='question__number' type="number" name="" id="number" placeholder='+998' />
+        <input className='question__name' type="text" id='name' placeholder={t('modal.text2')} required />
+        <input 
+        className='question__number' 
+        type="number" 
+        name="" id="number" 
+        placeholder='+998' 
+        maxLength="9"
+        required/>
         <button type='submit' loading={loading} className='question__btn'onClick={SendMessage}>{loading?"Yuborilmoqda...":"ARIZA QOLDIRISH"}</button>
+        
       </Modal>
     </div>
   )

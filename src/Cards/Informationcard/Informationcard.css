@@ -1,6 +1,6 @@
 .informationcard {
     width: 380px;
-    height: 340px;
+    height: 300px;
     top: 5625px;
     left: 360px;
     gap: 0px;
@@ -13,6 +13,7 @@
 .informationcard__container {
     border-radius: 10px;
     box-shadow: 1px 1px 2px #E9F5FF, 0 0 25px #E9F5FF, 0 0 5px #E9F5FF ;
+    height: 300px;
 }
 
 .informationcard__box {

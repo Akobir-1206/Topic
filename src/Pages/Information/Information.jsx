@@ -1,45 +1,47 @@
 import React from 'react'
 import '../Information/Information.css'
 import Informationcard from '../../Cards/Informationcard/Informationcard'
+import { useTranslation } from 'react-i18next';
 export default function Information() {
+    const {t, i18n} = useTranslation();
     return (
         <div className='information' id='info'>
             <div className="container">
                 <div className="information__container">
-                    <h1 className='information__title'>Nima uchun aynan TOPIK academy?</h1>
+                    <h1 className='information__title'>{t('info.text')}</h1>
 
                     <div className="information__card">
                         <div className="divv">
                         <Informationcard
                             number={"01"}
-                            name={"Professional ustozlar"}
-                            text={"Sizga 4 yildan ortiq tajriba va Topik darajasi 6 bo’lgan o’qituvchilar dars beradi"}
+                            name={t('info.text1')}
+                            text={t('info.text2')}
                         />
                         </div>
                         <Informationcard
                             number={"02"}
-                            name={"Bepul coworking zonalari"}
-                            text={"Erkin dars qilish, netvorking va o’z ustingizda ishlash uchun bepul coworking zonalarimiz mavjud"}
+                            name={t('info.text3')}
+                            text={t('info.text4')}
                         />
                         <Informationcard
                             number={"03"}
-                            name={"Haftalik tadbirlar"}
-                            text={"TOPIK acdemy jamoasi o’quvchilari uchun doimiy ravishda qo’shimcha tadbirar tashkilb keladi"}
+                            name={t('info.text5')}
+                            text={t('info.text6')}
                         />
                         <Informationcard
                             number={"04"}
-                            name={"Bepul sinov imtihonlari"}
-                            text={"Har davomida tashkillanadigan sinov imtihonlarida qatnashib o’z darajangizni bilib borasiz"}
+                            name={t('info.text7')}
+                            text={t('info.text8')}
                         />
                         <Informationcard
                             number={"05"}
-                            name={"Yordamchi kuratorlar"}
-                            text={"Darslarni o’zlashtirishda qiyinchilik bo’lsa sizga yordam beradigan kuratoringiz bo’ladi"}
+                            name={t('info.text9')}
+                            text={t('info.text10')}
                         />
                         <Informationcard
                             number={"06"}
-                            name={"Konsulting xizmatlar"}
-                            text={"Muvafaqqiyatli bitirgan talabalarimizga Janubiy Koreyada o’qish uchun visa olishda, universitet tanlash va grand yutishda yordam beramiz"}
+                            name={t('info.text11')}
+                            text={t('info.text12')}
                         />
 
                     </div>

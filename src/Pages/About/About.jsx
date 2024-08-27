@@ -9,10 +9,12 @@ import arrow from '../../assets/arrow.svg'
 import key from '../../assets/key.svg'
 import axios from 'axios';
 import { Modal } from 'antd'
+import { useTranslation } from 'react-i18next'
 
 
 
 export default function About() {
+    
 
   const [loading, setLoading] = useState(false)
   const [open, setOpen] = useState(false);
@@ -52,30 +54,30 @@ export default function About() {
           closeModal(true)
       })
   }
-
+  const {t, i18n} = useTranslation();
   return (
     <div className='about'> 
        <div className="container">
             <div className="about__container">
-                 <h1 className='about__name'>TOPIK academy aniq siz uchun agar siz:</h1>
+                 <h1 className='about__name'>{t('about.text0')}</h1>
                  <div className="about__cards">
-                    <Aboutcard  img={sms} about="Qisqa muddat ichida Koreys tilida gapirishni istaysiz"  />
-                    <Aboutcard  img={rocket} about="Koreys tili o’rganib o’z karyerangizni qurmoqchisiz"/>
-                    <Aboutcard  img={money} about="Topik sertifikatini olib Koreyaning nufuzli universitetlariga GRANT yutmoqchisiz"/>
-                    <Aboutcard  img={sumka} about="Janubiy Koreya davlatida o’qish va ishlash uchun ketmoqchisiz"/>
-                    <Aboutcard  img={arrow} about="Koreys tilini o’rta darajda bilasiz va darajangizni oshirmoqchisiz"/>
-                    <Aboutcard  img={key} about="Ko’p yillardan buyon o’qib ham natijaga chiqa olmayapsiz"/>
+                    <Aboutcard  img={sms} about={t('about.text')}  />
+                    <Aboutcard  img={rocket} about={t('about.text1')}/>
+                    <Aboutcard  img={money} about={t('about.text2')}/>
+                    <Aboutcard  img={sumka} about={t('about.text3')}/>
+                    <Aboutcard  img={arrow} about={t('about.text4')}/>
+                    <Aboutcard  img={key} about={t('about.text5')}/>
                  </div>
-                 <button className='about__button' onClick={openModal}>Ha, Bu Men</button>
+                 <button className='about__button' onClick={openModal}>{t('about.text6')}</button>
             </div>
        </div>
        <Modal title='' open={open} footer={null} onCancel={closeModal}>
                     <form action="">
-                        <h1 className='registrmodal__title'>Intensive</h1>
-                        <p className='registrmodal__text'>Bepul darsga o'z joyingizni band qilish uchun ma'lumotlaringizni qoldiring va biz siz bilan tez orada bog'lanamiz</p>
+                        <h1 className='registrmodal__title'>{t('modal.text')}</h1>
+                        <p className='registrmodal__text'>{t('modal.text1')}</p>
                     </form>
-                    <input className='question__name' type="text" id='name' placeholder='Ismingiz' required />
-                    <input className='question__number' type="number" name="" id="number" placeholder='+998' />
+                    <input className='question__name' type="text" id='name' placeholder={t('modal.text2')} required />
+                    <input className='question__number' type="number" name="" id="number" placeholder='+998'required />
                     <button type='submit' loading={loading} className='question__btn' onClick={SendMessage}>{loading ? "Yuborilmoqda..." : "ARIZA QOLDIRISH"}</button>
                 </Modal>
     </div>

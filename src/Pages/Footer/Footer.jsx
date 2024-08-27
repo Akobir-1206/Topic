@@ -5,7 +5,9 @@ import phone from '../../assets/phone.png'
 import teleg from '../../assets/teleg.svg'
 import insta from '../../assets/insta.svg'
 import youtube from '../../assets/youtube.svg'
+import { useTranslation } from 'react-i18next'
 export default function Footer() {
+     const {t, i18n} = useTranslation();
   return (
     <div className='footer'>
          <div className="container">
@@ -14,10 +16,10 @@ export default function Footer() {
                       <img className='footer__logo' src={logo} alt="" />
                    </ul>
                    <ul className='footer__centerlist'>
-                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Nega biz</a></li>
-                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Natijalar</a></li>
-                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Savollar</a></li>
-                        <li className='footer__centeritem'><a className='footer__centerlink' href="#">Kurslar</a></li>
+                        <li className='footer__centeritem'><a className='footer__centerlink' href="#info">{t('navbar.text1')}</a></li>
+                        <li className='footer__centeritem'><a className='footer__centerlink' href="#result">{t('navbar.text2')}</a></li>
+                        <li className='footer__centeritem'><a className='footer__centerlink' href="#kurs">{t('navbar.text3')}</a></li>
+                        <li className='footer__centeritem'><a className='footer__centerlink' href="#question">{t('navbar.text4')}</a></li>
                    </ul>
                    <ul className='footer__righlist'>
                       <li className='footer__rightitem'><img src={phone} alt="" /></li>

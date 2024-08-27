@@ -40,7 +40,7 @@
 }
 
 .grant__title {
-    width: 569px;
+    width: 599px;
     height: 29px;
     top: 3161px;
     left: 960px;
@@ -68,8 +68,8 @@
 }
 
 .grant__lowertitle {
-    width: 319px;
-    height: 29px;
+    width: 389px;
+    height: 35px;
     top: 3356px;
     left: 960px;
     gap: 0px;
@@ -79,6 +79,7 @@
     font-weight: 400;
     line-height: 29.11px;
     text-align: left;
+    /* padding: 10px; */
 
 }
 

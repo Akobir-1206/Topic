@@ -60,13 +60,13 @@ export default function Result() {
                     <button className='result__btn' onClick={openModal}>{t('result.text1')}</button>
                 </div>
                 <Modal title='' open={open} footer={null} onCancel={closeModal}>
-                    <form action="">
-                        <h1 className='registrmodal__title'>{t('modal.text')}</h1>
-                        <p className='registrmodal__text'>{t('modal.text1')}</p>
-                    </form>
+                <form action="" onSubmit={SendMessage}>
+                    <h1 className='registrmodal__title'>{t('modal.text')}</h1>
+                    <p className='registrmodal__text'>{t('modal.text1')}</p>
                     <input className='question__name' type="text" id='name' placeholder={t('modal.text2')} required />
-                    <input className='question__number' type="number" name="" id="number" placeholder='+998' required/>
-                    <button type='submit' loading={loading} className='question__btn' onClick={SendMessage}>{loading ? "Yuborilmoqda..." : "ARIZA QOLDIRISH"}</button>
+                    <input className='question__number' type="number" name="" id="number" placeholder='+998' required />
+                    <button type='submit' loading={loading} className='question__btn' >{loading ? "Yuborilmoqda..." : "ARIZA QOLDIRISH"}</button>
+                </form>
                 </Modal>
             </div>
         </div>

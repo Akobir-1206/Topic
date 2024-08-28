@@ -21,13 +21,15 @@ export default function Navigate() {
                 <li className='nav__item'><a href="#result" className='nav__link'>{t('navbar.text2')}</a></li>
                 <li className='nav__item'><a href="#kurs" className='nav__link'>{t('navbar.text3')}</a></li>
                 <li className='nav__item'><a href="#question" className='nav__link'>{t('navbar.text4')}</a></li>
+               
+                <li className='nav__item'><a href="tel:+998(33)3060098" className='nav__tel'><span className='nav__num'>+998 (33) 306 0098</span> {t('navbar.text5')}</a></li>
                 <select name="lng" id="lng" onChange={handleChange} value={languages}>
                   <option value="uz">Uzbek</option>
+                  <option value="ru">Русский</option>
                   <option value="en">English</option>
-                  <option value="ru">Russian</option>
                 </select>
-                <li className='nav__item'><a href="tel:+998(33)3060098" className='nav__tel'><span className='nav__num'>+998 (33) 306 0098</span> {t('navbar.text5')}</a></li>
              </ul>
+             
              </div>
         </div>
     </div>

@@ -1,9 +1,8 @@
 .grant{
     margin: 0 auto;
-    margin-right: 5%;
 }
 .grant__container {
-    padding: 30px;
+   padding-right: 30px;
 }
 
 .grant__logo {
@@ -13,11 +12,12 @@
 .grant__about {
     max-width: 1140px;
     display: flex;
-    gap: 90px;
+    justify-content: space-around;
+    /* gap: 50px; */
 }
 
 .grant__name {
-    width: 730px;
+    max-width: 730px;
     height: 150px;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -98,13 +98,169 @@
 
 }
 
-iframe {
-    width: 1000px;
-    height: 500px;
-    top: 3615px;
-    left: 360px;
-    gap: 0px;
-    opacity: 0px;
-    margin-left: 15%;
+.grant__iframe {
+   
+ width: 100%;
+ height: 550px;
 
+}
+@media (min-width: 968px) and (max-width: 1199px) {
+    .grant__name {
+        font-size: 32px;
+        width: 600px;
+        height: 100px;
+    }
+    .grant__title, .grant__lowertitle {
+        font-size: 20px;
+    }
+    .grant__text, .grant__lowertext {
+        width: 450px;
+        font-size: 18px;
+    }
+    .grant__img {
+        max-width: 350px;
+    }
+    .grant__iframe {
+   
+        width: 90%;
+        height: 450px;
+        margin-left: 7%;
+       
+       }
+}
+
+@media (min-width: 767px) and (max-width: 968px) {
+    .grant__name {
+        font-size: 28px;
+        width: 500px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    .grant__title, .grant__lowertitle {
+        font-size: 18px;
+    }
+    .grant__text, .grant__lowertext {
+        font-size: 12px;
+        width: 400px;
+    }
+    .grant__img {
+        max-width: 260px;
+    }
+    .grant__iframe {
+   
+        width: 80%;
+        height: 400px;
+        margin-left: 7%;
+       
+       }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .grant__name {
+        font-size: 24px;
+        width: 400px;
+        height: 100px;
+       
+    }
+    .grant__title{
+        font-size: 18px;
+        /* margin-left: 8%; */
+    }
+    .grant__lowertitle{
+        padding: 20px;
+        font-size: 18px;
+    }
+    .grant__text, .grant__lowertext {
+        font-size: 14px;
+        width: 450px;
+        /* margin-left: 3%; */
+    }
+    .grant__img {
+        display: none;
+    }
+    .grant__iframe {
+   
+        width: 85%;
+        height: 300px;
+        margin-left: 13%;
+       
+       }
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+    .grant__name {
+        font-size: 18px;
+        width: 90%; 
+        margin-left: 5%;
+        height: 70px;
+    }
+    .grant__title{
+        width: 300px;
+        font-size: 15px;
+        padding: 19px 0;
+        margin-left: -59px;
+    }
+    .grant__lowertitle{
+        font-size: 15px;
+        margin: 6% 0;
+        margin-left: -15px;
+        font-weight: 500;
+        padding-top: 20px;
+        padding-top: 60px;
+    }
+    .grant__text, .grant__lowertext {
+        font-size: 12px;
+        width: 280px;
+        margin-left: -29px;
+        /* padding: 0 auto ; */
+    }
+    .grant__img {
+        display: none;
+    }
+    .grant__iframe {
+   
+        width: 85%;
+        height: 200px;
+        margin-left: 13%;
+       
+       }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .grant__name {
+        font-size: 16px;
+        width: 90%; /* To'liq kenglikni egallaydi, konteynerga moslashadi */
+        margin-left: 5%;
+        height: 50px;
+        
+    }
+    .grant__list{
+        /* width: 300px; */
+    }
+    .grant__title, .grant__lowertitle {
+        font-size: 12px;
+        margin: 16px 0;
+        margin-left: -59px;
+    }
+    .grant__text, .grant__lowertext {
+        font-size: 10px;
+        width: 280px;
+        margin-left: -59px;
+    }
+    .grant__img {
+       display: none;
+    }
+    .grant__list{
+        /* margin-right: 80px; */
+        /* padding-right: -30px; */
+    }
+    .grant__iframe {
+   
+        width: 85%;
+        height: 150px;
+        margin-left: 13%;
+       
+       }
 }

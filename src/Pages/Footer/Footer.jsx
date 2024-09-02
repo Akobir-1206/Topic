@@ -1,10 +1,10 @@
 import React from 'react'
 import '../Footer/Footer.css'
 import logo from '../../assets/footer.svg'
-import phone from '../../assets/phone.png'
-import teleg from '../../assets/teleg.svg'
-import insta from '../../assets/insta.svg'
-import youtube from '../../assets/youtube.svg'
+import rasm1 from '../../assets/footer1.jpg'
+import rasm2 from '../../assets/footer2.jpg'
+import rasm3 from '../../assets/footer3.jpg'
+import rasm4 from '../../assets/teg.png'
 import { useTranslation } from 'react-i18next'
 export default function Footer() {
      const {t, i18n} = useTranslation();
@@ -22,10 +22,10 @@ export default function Footer() {
                         <li className='footer__centeritem'><a className='footer__centerlink' href="#question">{t('navbar.text4')}</a></li>
                    </ul>
                    <ul className='footer__righlist'>
-                      <li className='footer__rightitem'><img src={phone} alt="" /></li>
-                      <li className='footer__rightitem'><img src={teleg} alt="" /></li>
-                      <li className='footer__rightitem  '><img src={insta} alt="" /></li>
-                      <li className='footer__rightitem'><img src={youtube} alt="" /></li>
+                      <li className='footer__rightitem'><img src={rasm1} alt="" /></li>
+                      <li className='footer__rightitem'><img src={rasm2} alt="" /></li>
+                      <li className='footer__rightitem  '><img src={rasm3} alt="" /></li>
+                      <li className='footer__rightitem'><img src={rasm4} alt="" /></li>
                    </ul>
               </div>
          </div>

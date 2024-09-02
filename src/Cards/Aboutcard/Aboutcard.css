@@ -31,3 +31,82 @@
     gap: 0px;
     opacity: 0px;
 }
+@media (min-width: 767px) and (max-width: 968px){
+    .card__p{
+        width: 250px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .aboutcard {
+        width: 140px; /* Adjust card width */
+        height: 140px; /* Adjust card height */
+        margin-left: auto; /* Center align */
+        margin-right: auto; /* Center align */
+    }
+
+    .card__img {
+        width: 80px; /* Reduce image size */
+        height: 80px; /* Reduce image size */
+    }
+
+    .card__p {
+        font-size: 16px; /* Adjust font size for readability */
+        width: 200px; /* Adjust text width to fit smaller screens */
+        margin-top: 10px; /* Add margin to separate text from image */
+        opacity: 1; /* Ensure text is visible */
+        margin-left: auto; /* Center align text */
+        margin-right: auto; /* Center align text */
+    }
+}
+@media (min-width: 375px) and (max-width: 576px) {
+    .aboutcard {
+        width: 120px; /* Reduce card width for smaller screens */
+        height: 120px; /* Reduce card height for smaller screens */
+        margin-left: auto; /* Center the card */
+        margin-right: auto; /* Center the card */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+
+    .card__img {
+        width: 70px; /* Scale down image size */
+        height: 70px; /* Scale down image size */
+    }
+
+    .card__p {
+        font-size: 14px; /* Decrease font size for readability on small screens */
+        width: 200px; /* Adjust text width to fit the smaller card */
+        margin-top: 10px; /* Space between the image and the text */
+        opacity: 1; /* Ensure text is visible */
+        margin-left: auto; /* Center the text */
+        margin-right: auto; /* Center the text */
+        line-height: 18px; /* Adjust line height for better readability */
+    }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+    .aboutcard {
+        width: 100px; /* Reduced width to fit smaller screens */
+        height: 100px; /* Reduced height to maintain aspect ratio */
+        margin-left: 0; /* Center the card on smaller screens */
+        margin: 0 auto;
+        padding: 10px ; /* Ensure centering in parent container */
+    }
+
+    .card__img {
+        width: 60px; /* Reduced size for smaller screen */
+        height: 60px; /* Adjusted to maintain proportion */
+    }
+
+    .card__p {
+        width: 120px; /* Match width of aboutcard */
+        font-size: 14px; /* Smaller font size for readability */
+        line-height: 16px; /* Adjusted line height */
+        opacity: 1; /* Ensure text is visible */
+        position: relative; /* Positioning adjustment */
+        top: 0; /* Reset top for proper positioning */
+        left: 0; /* Reset left for proper positioning */
+        margin-top: 10px; /* Space between image and text */
+        margin-left: auto; /* Center text below image */
+        margin-right: auto; /* Center text below image */
+    }
+}

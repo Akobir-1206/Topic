@@ -1,14 +1,14 @@
 .question {
-    margin: 0 auto;
     background-color: #ABDDB126;
+}
+
+.question__container {
+    margin: 0 auto;
+    
     width: 1000px;
     height: 290px;
     border-radius: 16px;
     opacity: 0px;
-}
-
-.question__container {
-  
     display: flex;
     justify-content: space-between;
 

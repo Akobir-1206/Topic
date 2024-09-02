@@ -19,7 +19,7 @@
         "text0": "TOPIK academy aniq siz uchun agar siz:",
         "text": "Qisqa muddat ichida Koreys tilida gapirishni istaysiz",
         "text1": "Koreys tili o’rganib o’z karyerangizni qurmoqchisiz",
-        "text2": "Topik sertifikatini olib Koreyaning nufuzli universitetlariga GRANT yutmoqchisiz",
+        "text2": "Topik sertifikatini olib Koreyaning nufuzli universitetlariga ",
         "text3": "Janubiy Koreya davlatida o’qish va ishlash uchun ketmoqchisiz",
         "text4": "Koreys tilini o’rta darajda bilasiz va darajangizni oshirmoqchisiz",
         "text5": "Ko’p yillardan buyon o’qib ham natijaga chiqa olmayapsiz",
@@ -76,7 +76,7 @@
         "text9": "Yordamchi kuratorlar",
         "text10": "Darslarni o’zlashtirishda qiyinchilik bo’lsa sizga yordam beradigan kuratoringiz bo’ladi",
         "text11": "Konsulting xizmatlar",
-        "text12": "Muvafaqqiyatli bitirgan talabalarimizga Janubiy Koreyada o’qish uchun visa olishda, universitet tanlash va grand yutishda yordam beramiz"
+        "text12": "Muvafaqqiyatli bitirgan talabalarimizga Janubiy Koreyada o’qish uchun visa olishda"
     },
     "ques":{
         "text": "Savollaringiz qoldimi?",

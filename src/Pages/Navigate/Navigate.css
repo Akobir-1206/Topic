@@ -1,12 +1,7 @@
-.navigate {
-    max-width: 1140px;
-    display: flex;
-    margin: 0 auto;
-    padding: 25px;
-    
-}
+.navigate {}
 
 .navigate__box {
+    max-width: 1200px;
     display: flex;
 }
 
@@ -23,7 +18,7 @@
     width: 129px;
     height: 45px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     /* opacity: 0px; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
@@ -75,11 +70,13 @@
     padding-left: 38px;
     letter-spacing: 1px;
 }
-.nav__num{
-font-weight: 600;
-    
+
+.nav__num {
+    font-weight: 600;
+
 }
-select{
+
+select {
     width: 80px;
     height: 25px;
     background-color: #418E8B;
@@ -87,4 +84,268 @@ select{
     border-color: #418E8B;
     border-radius: 5px;
     font-size: 14px;
+}
+
+.navigate {
+    position: relative;
+}
+
+.burger-button {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 968px) and (max-width: 1199px) {
+    .nav__img {
+        width: 80px;
+        height: 77px;
+    }
+
+    .nav__text {
+        width: 150px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .nav__tel {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    select {
+        width: 80px;
+        height: 25px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 968px) {
+    .nav__img {
+        width: 70px;
+        height: 77px;
+    }
+
+    .nav__text {
+        display: none;
+        width: 150px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .nav__list {
+        margin-right: 10%;
+    }
+
+    .nav__link {
+
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .nav__tel {
+        font-size: 16px;
+        margin-right: -5px;
+    }
+
+    select {
+        width: 70px;
+        height: 25px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav__img {
+        width: 90px;
+        height: 77px;
+        margin-left: 19px;
+    }
+
+    .nav__text {
+        /* display: none; */
+        width: 130px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .burger-button {
+        justify-content: space-around;
+        display: flex;
+        margin-left: 39%;
+        margin-top: 2.5%;
+        width: 190px;
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        z-index: 10;
+    }
+    .nav__tel {
+        font-size: 16px;
+        margin-right: -5px;
+    }
+    .nav__list {
+        display: none;
+        /* Yashirin qilish */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 60%;
+        width: 30%;
+        background: #6dcccc;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+        box-shadow: 2px 2px 2px #418E8B, 0 0 29px #418E8B, 0 0 5px #E9F5FF;
+    }
+    .nav__list--open {
+        display: flex;
+    }
+    .navigate__box {
+        display: flex;
+    }
+}
+@media (min-width: 375px) and (max-width: 576px) {
+    .nav__img {
+        width: 70px; /* Rasmning kattaligi kichraytirilgan */
+        height: 60px; /* Rasmning kattaligi kichraytirilgan */
+        margin-left: 15px; /* Rasmning chapdan chetlatilishi */
+    }
+
+    .nav__text {
+        width: 130px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .burger-button {
+        justify-content: space-around;
+        display: block; /* Kichik ekranda burger tugmasini ko'rsatish */
+        margin-left: auto; /* Tugmani o'ngga surish */
+        margin-right: 15px; /* O'ngdan biroz masofa qo'shish */
+        margin-top: 10px; /* Yuqoridan biroz masofa qo'shish */
+        width: 40px; /* Kichikroq tugma kengligi */
+        height: 40px; /* Kichikroq tugma balandligi */
+        font-size: 24px; /* Burger tugmasining kattaligi */
+        background-color: transparent; /* Fon rangini o'chirish */
+        border: none; /* Chegarasiz tugma */
+        cursor: pointer; /* Hoverda ko'rsatkich qo'lcha bo'lsin */
+        transition: transform 0.3s ease; /* Tugma animatsiyasi */
+        z-index: 10; /* Tugmani boshqa elementlardan ustun qilish */
+    }
+
+    .nav__tel {
+        font-size: 14px; /* Telefon raqamining kattaligi kichraytirilgan */
+        margin-right: 0; /* O'ng tomondan chegara */
+    }
+
+    .nav__list {
+        display: none; 
+        flex-direction: column;
+        position: absolute; 
+        top: 100%; 
+        left: 60%;
+        width: 40%;
+        background: #6dcccc; 
+        padding: 1px 0; 
+        transition: transform 0.3s ease;
+        box-shadow: 2px 2px 2px #418E8B, 0 0 29px #418E8B, 0 0 5px #E9F5FF; 
+        transform: translateX(-50%); 
+    }
+
+    .nav__list--open {
+        display: flex; 
+    }
+
+    .navigate__box {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    .nav__link{
+        font-size: 12px;
+
+    }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+    .nav__img {
+        width: 60px; /* Rasmning kattaligi yanada kichraytirilgan */
+        height: 50px; /* Rasmning balandligi kichraytirilgan */
+        margin-left: 10px; /* Rasmning chapdan chetlatilishi */
+    }
+
+    .nav__text {
+        font-size: 10px;
+    }
+
+    .burger-button {
+        justify-content: space-around;
+        display: block; /* Burger tugmasi kichik ekranda ko'rsatiladi */
+        margin-left: auto; /* Tugmani o'ngga surish */
+        margin-right: 10px; /* O'ngdan biroz masofa qo'shish */
+        margin-top: 10px; /* Yuqoridan biroz masofa qo'shish */
+        width: 35px; /* Kichikroq tugma kengligi */
+        height: 35px; /* Kichikroq tugma balandligi */
+        font-size: 22px; /* Burger tugmasining kattaligi biroz kichraytirilgan */
+        background-color: transparent; /* Fon rangini o'chirish */
+        border: none; /* Chegarasiz tugma */
+        cursor: pointer; /* Hoverda ko'rsatkich qo'lcha bo'lsin */
+        transition: transform 0.3s ease; /* Tugma animatsiyasi */
+        z-index: 10; /* Tugmani boshqa elementlardan ustun qilish */
+    }
+
+    .nav__tel {
+        font-size: 12px; /* Telefon raqamining kattaligi kichraytirilgan */
+        margin-right: 0; /* O'ng tomondan chegara */
+    }
+
+    .nav__list {
+        display: none; /* Yashirin qilish */
+        flex-direction: column; /* Vertikal holatda menyu */
+        position: absolute; /* Navigatsiya menyusi o'z holatini saqlaydi */
+        top: 100%; /* Menyu navigatsiya panelining tagida joylashadi */
+        left: 60%; /* Menyu markazda joylashadi */
+        width: 50%; /* Menyu kengligi */
+        background: #6dcccc; /* Fon rangini o'zgartirish */
+        padding: 5px 0; /* Ichki masofa */
+        transition: transform 0.3s ease; /* Animatsiya o'zgarishi */
+        box-shadow: 2px 2px 2px #418E8B, 0 0 29px #418E8B, 0 0 5px #E9F5FF; /* Soyali ko'rinish */
+        transform: translateX(-50%); /* Menyuni markazga surish */
+    }
+    .nav__item{
+        padding: 0px;
+        
+    }
+
+    .nav__list--open {
+        display: flex;
+    }
+
+    .navigate__box {
+        display: flex;
+        align-items: center; 
+    }
+
+    .nav__link {
+        font-size: 10px;
+       
+    }
+    .nav__tel{
+        font-size: 10px;
+    }
+    select{
+        width: 70px;
+       font-size: 10px;
+    }
 }

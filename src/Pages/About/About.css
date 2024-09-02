@@ -1,6 +1,6 @@
 .about {
     margin: 0 auto;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .about__name {
@@ -42,4 +42,150 @@
     margin-top: 40px;
     padding: 20px 22px 22px 22px;
     margin-left: 40%;
+}
+
+@media (min-width: 968px) and (max-width: 1199px){
+    .about__name {
+        width: 100%; /* Katta ekranlar uchun to'liq kenglikda */
+        font-size: 32px; /* Matn o'lchamini biroz kichraytirish */
+        margin-left: 0; /* Markazlash uchun o'ng tomonga bo'sh joy qoldirmaslik */
+        text-align: center; /* Matnni markazlashtirish */
+    }
+
+    .about__cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about__button {
+        width: 250px; /* Tugma kengligini biroz kichraytirish */
+        height: 60px; /* Tugma balandligini biroz kichraytirish */
+        margin-left: auto; /* Markazlash uchun */
+        margin-right: auto; /* Markazlash uchun */
+        font-size: 16px; /* Matn o'lchamini moslashtirish */
+        padding: 15px 20px; /* Tugma bo'shlig'ini moslashtirish */
+    }
+}
+@media (min-width: 767px) and (max-width: 968px){
+    .about__name {
+        width: 90%; /* Make the title take more space */
+        font-size: 28px; /* Adjust font size for smaller screens */
+        margin-left: auto; /* Center align the title */
+        margin-right: auto; /* Center align the title */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    .about__cards {
+        width: 100%; /* Make cards container take full width */
+        margin-left: 5%; /* Adjust margin for smaller screens */
+        margin-right: 5%; /* Adjust margin for smaller screens */
+        gap: 20px; /* Adjust gap for better spacing */
+        justify-content: center; /* Center the cards */
+    }
+
+    .about__button {
+        width: 240px; /* Reduce button width for smaller screens */
+        height: 60px; /* Adjust button height */
+        font-size: 16px; /* Adjust font size */
+        margin-left: auto; /* Center align the button */
+        margin-right: auto; /* Center align the button */
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .about__name {
+        width: 80%; /* Reduce width to fit smaller screens */
+        font-size: 30px; /* Adjust font size for readability */
+        margin-left: auto; /* Center align the title */
+        margin-right: auto; /* Center align the title */
+        text-align: center; /* Center the text */
+    }
+
+    .about__cards {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+    }
+
+    .about__button {
+        width: 200px; /* Reduce button width */
+        height: 50px; /* Adjust button height */
+        font-size: 14px; /* Adjust font size */
+        margin-left: auto; /* Center align the button */
+        margin-right: auto; /* Center align the button */
+    }
+}
+@media (min-width: 375px) and (max-width: 576px) {
+    .about__name {
+        width: 90%;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about__cards {
+        margin-left: 5%;
+        width: 90%;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__button {
+        width: 30%;
+        height: 40px;
+        font-size: 16px;
+        margin-left: 35%;
+        margin-right: 8%;
+        padding: 13px 0;
+        padding-top: 4px;
+    }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+    .about__name {
+        width: 90%;
+        font-size: 20px;
+        line-height: 28px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+
+    .about__cards {
+        margin-left: 5%;
+        width: 90%;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutcard {
+        width: 140px;
+        height: 140px;
+        margin-left: 0;
+    }
+
+    .card__img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card__p {
+        width: 140px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .about__button {
+        width: 80%;
+        height: 50px;
+        font-size: 14px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 15px 0;
+    }
 }

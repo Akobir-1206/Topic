@@ -6,8 +6,8 @@ import { useTranslation } from 'react-i18next';
 export default function Header() {
     const {t, i18n} = useTranslation();
     return (
-        <div className='header'>
-            <div className="container">
+        <div className="container">
+                <div className='header'>
                 <div className="header__left">
                     <p className='header__p'>{t('header.text')}</p>
                     <h1 className='header__name'>{t('header.text1')}</h1>
@@ -22,9 +22,7 @@ export default function Header() {
                     <button className='button'><a className='header__link' href="#kurs">{t('header.text4')}</a></button>
                     <p className='header__text'>{t('header.text5')}</p>
                 </div>
-                <div className="header__right">
-                    <img className='header__img' src={headerpic} alt="" />
-                </div>
+               
             </div>
         </div>
     )

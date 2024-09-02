@@ -1,10 +1,13 @@
 .footer{
    
     margin: auto;
-    padding: 60px;
+ padding: 30px 0;
+}
+.container{
+    border: 1px solid red;
 }
 .footer__container{
-    width: 1368px;
+    width: 1200px;
     height: 200px;
     background-color: #333333;
     border-radius: 19px;
@@ -13,7 +16,7 @@
 }
 .footer__centerlist{
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
     align-items: center;
     margin-left: 10%;
 }
@@ -30,15 +33,20 @@
     margin-right: 30px;
 }
 .footer__righlist{
+    width: 200px;
+
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+     justify-content: space-around;
+    /* gap: 30px; */
     align-items: center;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .footer__rightitem{
     width: 30px;
     height: 30px;
     /* background-color: aliceblue; */
+    /* background-color: #333333; */
 }
 .insta{
     width: 200px;

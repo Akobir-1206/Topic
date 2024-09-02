@@ -1,13 +1,15 @@
 .information{
-    padding: 40px;
+    /* padding: 40px ; */
 }
 .information__card{
-    padding: 30px;
+    /* padding: 30px; */
     width: 1200px;
-    padding: 10px;
+    height: 720px;
+    /* padding: 10px ; */
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-around;
+    /* gap: 30px; */
 }
 .information__title{
     width: 602px;

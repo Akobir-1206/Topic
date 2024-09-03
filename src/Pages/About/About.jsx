@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../About/About.css'
-import Aboutcard from '../../Cards/Aboutcard/aboutcard'
+import Aboutcard from '../../Cards/Aboutcard/Aboutcard.jsx'
 import sms from '../../assets/sms.svg'
 import rocket from '../../assets/rocket.svg'
 import money from '../../assets/money.svg'

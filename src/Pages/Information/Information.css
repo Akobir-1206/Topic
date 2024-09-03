@@ -1,15 +1,15 @@
 .information{
-    /* padding: 40px ; */
+   
 }
 .information__card{
-    /* padding: 30px; */
-    width: 1200px;
-    height: 720px;
-    /* padding: 10px ; */
+  
+    /* width: 1200px; */
+    /* height: 720px; */
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* gap: 30px; */
+  
 }
 .information__title{
     width: 602px;
@@ -20,6 +20,78 @@ font-weight: 400;
 line-height: 43.67px;
 text-align: center;
 margin-left: 25%;
+}
 
+@media (min-width: 968px) and (max-width: 1199px) {
+    .information__card {
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .information__title {
+        font-size: 32px; /* Shrift hajmini kichikroq qilish */
+    }
+}
 
+@media (min-width: 767px) and (max-width: 968px) {
+    .information__card {
+        width: 90%; /* Kichikroq kenglik, responsivlikni ta'minlash */
+        margin: 0 auto; /* Kartalarni markazlash */
+    }
+    .information__title {
+        font-size: 28px;
+         width: 400px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .information__card {
+        flex-direction: column; /* Kartalar ustma-ust joylashadi */
+        align-items: center; /* Kartalar markazda */
+    }
+    .information__title {
+        font-size: 23px;
+        width: 300px;
+        /* margin-right: 10%; */
+        
+    }
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+    .information__card {
+        flex-direction: column; 
+        margin: 0 auto; 
+        display: flex;
+        align-items: center;
+    }
+    .information__title {
+        font-size: 20px;
+       width: 290px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .information__container{
+        display: flex;
+        align-items: center;
+        flex-direction: column  ;
+       
+    }
+    .information__card {
+        flex-direction: column; 
+        display: flex;
+        align-items: center;
+        
+        /* margin: 0 auto;  */
+        
+    }
+    .information__title {
+        font-size: 16px;
+        width: 150px;
+        padding-bottom: 30px ;
+        margin: 0;
+        /* height: ; */
+       
+    }
 }

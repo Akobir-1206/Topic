@@ -20,7 +20,7 @@ function App() {
       <Result/>
       <Grant/>
       <Registr/>
-      {/* <Information/> */}
+      <Information/>
       {/* <Question/> */}
       {/* <Footer/> */}
     </>

@@ -106,3 +106,126 @@
     width: 290px;
     margin-left: 20%;
 }
+
+@media (min-width: 968px) and (max-width: 1199px) {
+    .registrcard {
+        width: 320px;
+        height: auto; /* height o'chirildi, responsivlik uchun */
+    }
+    .registrcard__text, .registrmodal__text {
+        font-size: 14px; /* kichikroq shriftdan foydalanamiz */
+    }
+}
+
+@media (min-width: 767px) and (max-width: 968px) {
+    .registrcard {
+        width: 340px;
+    }
+    .registrcard__img{
+        width: 350px;
+        height: 150px;
+    }
+    .registrcard__name {
+        width: 90px;
+        height: 29px;
+    }
+    .registrcard__btn {
+        width: 100px;
+        height: 39px;
+        font-size: 12px;
+    }
+    .registrmodal__title {
+        font-size: 24px; /* moslashtirish */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+    .registrcard {
+        width: 300px;
+        height: 390px;
+    }
+    .registrcard__img{
+        width: 280px;
+        height: 130px;
+       
+    }
+    .registrcard__name {
+        width: 90px;
+        height: 29px;
+        font-size: 16px;
+    }
+    .registrcard__text{
+        width: 180px;
+        font-size: 10px;
+    }
+    .registrcard__btn, .registrcard__button {
+        width: 90px;
+        height: 30px;
+        font-size: 7px;
+    }
+    .registrcard__price{
+        width: 100px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+    .registrcard {
+        width: 290px;
+    }
+    .registrcard__img{
+        width: 280px;
+        height: 130px;
+        margin-right: 20px;
+    }
+    .registrcard__name {
+        font-size: 20px; /* moslashtirish */
+    }
+    .registrcard__btn, .registrcard__button {
+        width: 100px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .registrcard {
+        width: 255px;
+        height: 380px;
+       
+    }
+    .registrcard__img{
+        width: 260px;
+        height: 100px;
+        
+
+    }
+    .registrcard__name {
+        font-size: 18px;
+    }
+    .registrmodal__title {
+        font-size: 18px; /* kichikroq ekranlar uchun */
+        margin-left: 0;
+        text-align: center;
+    }
+    .registrcard__btn{
+        width: 80px;
+        height: 24px;
+        font-size: 7px;
+        margin-right: 10px;
+    }
+    .registrcard__text{
+        width: 190px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .registrcard__button{
+        width: 80px;
+        height: 24px;
+        font-size: 9px;
+    }
+    .registrcard__price{
+        font-size: 10px;
+    }
+}

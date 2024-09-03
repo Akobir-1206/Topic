@@ -11,13 +11,13 @@ export default function Information() {
                     <h1 className='information__title'>{t('info.text')}</h1>
 
                     <div className="information__card">
-                        {/* <div className="divv"> */}
+                       
                         <Informationcard
                             number={"01"}
                             name={t('info.text1')}
                             text={t('info.text2')}
                         />
-                        {/* </div> */}
+                       
                         <Informationcard
                             number={"02"}
                             name={t('info.text3')}

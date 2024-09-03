@@ -243,6 +243,7 @@
         font-size: 12px;
         margin: 16px 0;
         margin-left: -59px;
+        width: 200px;
     }
     .grant__text, .grant__lowertext {
         font-size: 10px;

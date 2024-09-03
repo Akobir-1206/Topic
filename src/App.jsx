@@ -21,8 +21,8 @@ function App() {
       <Grant/>
       <Registr/>
       <Information/>
-      {/* <Question/> */}
-      {/* <Footer/> */}
+      <Question/>
+      <Footer/>
     </>
   )
 }

@@ -111,6 +111,7 @@
         height: 100px;
     }
     .grant__title, .grant__lowertitle {
+        width: 500px;
         font-size: 20px;
     }
     .grant__text, .grant__lowertext {
@@ -139,6 +140,7 @@
        
     }
     .grant__title, .grant__lowertitle {
+        width: 400px;
         font-size: 18px;
     }
     .grant__text, .grant__lowertext {
@@ -155,6 +157,9 @@
         margin-left: 7%;
        
        }
+       .grant__list{
+        
+        width: 500px;}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -165,12 +170,18 @@
        
     }
     .grant__title{
+        width: 380px;
         font-size: 18px;
+        padding-bottom: 8%;
         /* margin-left: 8%; */
     }
     .grant__lowertitle{
         padding: 20px;
         font-size: 18px;
+    }
+    .grant__list{
+        margin-right: 10%;
+        width: 400px;
     }
     .grant__text, .grant__lowertext {
         font-size: 14px;
@@ -190,6 +201,9 @@
 }
 
 @media (min-width: 375px) and (max-width: 576px) {
+    .grant__container{
+        padding: 0;
+    }
     .grant__name {
         font-size: 18px;
         width: 90%; 
@@ -197,12 +211,13 @@
         height: 70px;
     }
     .grant__title{
-        width: 300px;
+        width: 250px;
         font-size: 15px;
         padding: 19px 0;
-        margin-left: -59px;
+        margin-left: -10px;
     }
     .grant__lowertitle{
+        width: 250px;
         font-size: 15px;
         margin: 6% 0;
         margin-left: -15px;
@@ -225,6 +240,12 @@
         height: 200px;
         margin-left: 13%;
        
+       }
+       .grant__listimg{
+        padding: 0;
+       }
+       .grant__about{
+        margin-right: 20px;
        }
 }
 

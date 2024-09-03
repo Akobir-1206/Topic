@@ -227,7 +227,7 @@
         display: none;
     }
     .header__name {
-        width: 380px; /* Sarlavhani yanada kichraytirish */
+        width: 300px; /* Sarlavhani yanada kichraytirish */
         font-size: 18px; /* Matnning kattaligini kichraytirish */
         margin-left: 20px;
         line-height: 50px;

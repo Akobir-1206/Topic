@@ -3,7 +3,7 @@ import './Aboutcard.css'
 
 export default function Aboutcard(props) {
   return (
-<div>
+<div className='aboutcard__box'>
 <div className='aboutcard'>
             <img className='card__img' src={props.img} alt=""/>
             

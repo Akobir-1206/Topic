@@ -70,6 +70,7 @@ export default function Result() {
     };
     return (
         <div className='result' id='result'>
+            {contextHolder}
             <div className="container">
                 <div className="result__container">
                     <h1 className='result__name'>{t('result.text')}</h1>

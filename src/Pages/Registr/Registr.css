@@ -34,7 +34,7 @@ margin-left: 20%;
     .registr__title {
         width: 80%;
         font-size: 34px;
-        margin-left: 16%;
+        margin-left: 29%;
     }
     .registr__card {
         width: 100%;
@@ -113,8 +113,8 @@ margin-left: 20%;
     }
     .registr__card {
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        /* margin-right: 30%; */
     }
 }
 @media (min-width: 320px) and (max-width: 375px) {

@@ -81,6 +81,7 @@ export default function About() {
   
     return (
         <div className='about'>
+          {contextHolder}
             <div className="container">
                 <div className="about__container">
                     <h1 className='about__name'>{t('about.text0')}</h1>

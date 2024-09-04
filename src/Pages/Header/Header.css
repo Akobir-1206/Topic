@@ -294,6 +294,9 @@
         text-align: center;
         padding-top: 5px;
     }
+    .header__link{
+        font-size: 10px;
+    }
 
     .header__text {
         display: none;

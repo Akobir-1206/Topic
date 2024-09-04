@@ -118,10 +118,11 @@
 
     .about__button {
         width: 200px; /* Reduce button width */
-        height: 50px; /* Adjust button height */
+        height: 45px; /* Adjust button height */
         font-size: 14px; /* Adjust font size */
         margin-left: auto; /* Center align the button */
-        margin-right: auto; /* Center align the button */
+        margin-right: auto;
+        padding: 14px 0; /* Center align the button */
     }
 }
 @media (min-width: 375px) and (max-width: 576px) {

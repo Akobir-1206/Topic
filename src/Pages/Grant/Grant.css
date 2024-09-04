@@ -265,9 +265,10 @@
 @media (min-width: 320px) and (max-width: 375px) {
     .grant__name {
         font-size: 18px;
-        height: 80px;
+        height: 90px;
         width: 90%; /* To'liq kenglikni egallaydi, konteynerga moslashadi */
-        margin-left: 5%;     
+        margin-left: 5%;  
+        line-height: 40px;   
     }
     .grant__list{
         /* width: 300px; */

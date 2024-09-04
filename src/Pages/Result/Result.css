@@ -87,11 +87,11 @@
         margin-left: 15%;
     }
     .result__btn {
-        width: 25%;
-        height: 48px;
-        font-size: 14px;
+        width: 26%;
+        height: 40px;
+        font-size: 12px;
         margin-left: 36%;
-        padding: 9px 0;
+        padding: 12px 0;
     }
     .result__img {
         width: 200px;
@@ -110,7 +110,7 @@
     .result__btn {
         width: 150px;
         height: 40px;
-        margin-left: 39%;
+        margin-left: 30%;
         font-size: 12px;
         padding: 15px 0;
         text-align: center;

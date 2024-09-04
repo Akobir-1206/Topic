@@ -5,7 +5,8 @@
 }
 
 .container {
-   
+    padding: 20px 0;
+   border: 1px solid red;
 }
 
 .footer__container {

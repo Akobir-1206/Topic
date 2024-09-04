@@ -115,6 +115,12 @@
     .registrcard__text, .registrmodal__text {
         font-size: 14px; /* kichikroq shriftdan foydalanamiz */
     }
+    .registrcard__img {
+        width: 320px;
+    }
+    .registrcard__price{
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 968px) {
@@ -173,6 +179,7 @@
 @media (min-width: 375px) and (max-width: 576px) {
     .registrcard {
         width: 290px;
+        height: 420px;
     }
     .registrcard__img{
         width: 280px;

@@ -93,7 +93,8 @@
         height: 60px; /* Adjust button height */
         font-size: 16px; /* Adjust font size */
         margin-left: auto; /* Center align the button */
-        margin-right: auto; /* Center align the button */
+        margin-right: auto; 
+        margin-top: 10%;
     }
     
 }
@@ -126,7 +127,7 @@
 @media (min-width: 375px) and (max-width: 576px) {
     .about__name {
         width: 90%;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 30px;
         margin-left: 5%;
         margin-right: 5%;
@@ -141,13 +142,13 @@
     }
 
     .about__button {
-        width: 30%;
+        width: 36%;
         height: 40px;
-        font-size: 16px;
-        margin-left: 35%;
+        font-size: 14px;
+        margin-left: 15%;
         margin-right: 8%;
         padding: 13px 0;
-        padding-top: 4px;
+        padding-top: px;
     }
 }
 @media (min-width: 320px) and (max-width: 375px) {
@@ -175,20 +176,21 @@
     }
 
     .card__img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .card__p {
         width: 140px;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 10px;
+        line-height: 15px;
+       
     }
 
     .about__button {
-        width: 80%;
-        height: 50px;
-        font-size: 14px;
+        width: 50%;
+        height: 40px;
+        font-size: 13px;
         margin-left: 10%;
         margin-right: 10%;
         padding: 15px 0;

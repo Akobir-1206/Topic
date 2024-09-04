@@ -48,6 +48,7 @@ margin-left: 20%;
         padding: 2px;
     }
     .registrcard {
+        padding: 20px 0;
         width: 280px; /* Kartalarni yanada qisqartirish */
         height: 400px;
     }
@@ -56,9 +57,10 @@ margin-left: 20%;
         height: 140px;
     }
     .registr__title {
-        width: 90%;
-        font-size: 32px;
-        margin-left: 15%;
+        padding-bottom: 6%;
+        width: 470px;
+        font-size: 30px;
+        text-align: center;
     }
     .registr__card {
         width: 100%;
@@ -122,6 +124,7 @@ margin-left: 20%;
     .registrcard {
         width: 200px;
         height: 330px;
+        
     }
     .registrcard__img {
         width: 220px;
@@ -134,8 +137,11 @@ margin-left: 20%;
         margin-left: 0;
     }
     .registr__card {
+        margin: 0 auto;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        margin-left: 10%;
+        padding: 0;
     }
 }

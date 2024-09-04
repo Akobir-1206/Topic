@@ -77,6 +77,7 @@ padding-bottom: 20px;
         width: 300px; /* Kichikroq ekranlar uchun kenglikni kamaytirish */
     }
     .informationcard__name {
+        width: 280px;
         font-size: 22px; /* Shrift hajmini kichikroq qilish */
     }
     .informationcard__text {
@@ -99,7 +100,7 @@ padding-bottom: 20px;
         width: 260px; /* Kichikroq ekranlar uchun kenglikni kamaytirish */
     }
     .informationcard__name {
-        font-size: 18px; /* Shrift hajmini kichikroq qilish */
+        font-size: 15px; /* Shrift hajmini kichikroq qilish */
     }
     .informationcard__text {
         font-size: 12px;
@@ -136,17 +137,19 @@ padding-bottom: 20px;
 
 @media (min-width: 375px) and (max-width: 576px) {
     .informationcard__container{
-        width: 320px;
+        width: 300px;
         
     }
     .informationcard__name {
         width: 200px;
-        font-size: 18px;
+        line-height: 20px;
+        font-size: 16px;
        font-weight: 500;
     }
     .informationcard__text {
         width: 250px;
-        font-size: 13px; /* Shrift hajmini kichikroq qilish */
+        line-height: 25px;
+        font-size: 11px; /* Shrift hajmini kichikroq qilish */
     }
     .informationcard__number{
         padding: 1px;
@@ -184,4 +187,5 @@ padding-bottom: 20px;
       width: 52px;
       height: 52px;
   }
+  
 }

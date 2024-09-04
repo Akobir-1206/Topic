@@ -132,40 +132,46 @@
 
 @media (min-width: 767px) and (max-width: 968px) {
     .grant__name {
-        font-size: 28px;
-        width: 500px;
+        font-size: 26px;
+        width: 470px;
         height: 100px;
-        display: flex;
-        justify-content: space-around;
-       
+       margin: 0 auto;
+       margin-bottom: 20px;
+     
     }
+
+    
     .grant__title, .grant__lowertitle {
-        width: 400px;
+        width: 450px;
         font-size: 18px;
     }
     .grant__text, .grant__lowertext {
         font-size: 12px;
         width: 400px;
     }
+    .grant__listimg{
+        padding: 0;
+    }
     .grant__img {
         max-width: 260px;
+        /* padding: 1px 0; */
     }
     .grant__iframe {
    
         width: 80%;
         height: 400px;
-        margin-left: 7%;
+        margin-left: 13%;
        
        }
        .grant__list{
-        
+        padding: 10px 0;
         width: 500px;}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     .grant__name {
         font-size: 24px;
-        width: 400px;
+        width: 390px;
         height: 100px;
        
     }
@@ -203,9 +209,11 @@
 @media (min-width: 375px) and (max-width: 576px) {
     .grant__container{
         padding: 0;
+        /* display: flex; */
+        justify-content: center;
     }
     .grant__name {
-        font-size: 18px;
+        font-size: 20px;
         width: 90%; 
         margin-left: 5%;
         height: 70px;
@@ -215,6 +223,11 @@
         font-size: 15px;
         padding: 19px 0;
         margin-left: -10px;
+        text-align: center;
+    }
+    .grant__about{
+        text-align: center;
+        justify-content: center;
     }
     .grant__lowertitle{
         width: 250px;
@@ -228,17 +241,17 @@
     .grant__text, .grant__lowertext {
         font-size: 12px;
         width: 280px;
-        margin-left: -29px;
+        /* margin-left: -29px; */
         /* padding: 0 auto ; */
     }
     .grant__img {
         display: none;
     }
     .grant__iframe {
-   
-        width: 85%;
+        padding-top: 10px;
+        width: 80%;
         height: 200px;
-        margin-left: 13%;
+        margin-left: 10%;
        
        }
        .grant__listimg{
@@ -251,11 +264,10 @@
 
 @media (min-width: 320px) and (max-width: 375px) {
     .grant__name {
-        font-size: 16px;
+        font-size: 18px;
+        height: 80px;
         width: 90%; /* To'liq kenglikni egallaydi, konteynerga moslashadi */
-        margin-left: 5%;
-        height: 50px;
-        
+        margin-left: 5%;     
     }
     .grant__list{
         /* width: 300px; */

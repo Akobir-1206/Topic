@@ -129,8 +129,9 @@ select {
 
 @media (min-width: 767px) and (max-width: 968px) {
     .nav__img {
-        width: 70px;
-        height: 77px;
+        width: 90px;
+        height: 70px;
+        margin-left: 20px;
     }
 
     .nav__text {
@@ -141,7 +142,9 @@ select {
     }
 
     .nav__list {
-        margin-right: 10%;
+        justify-content: space-around;
+        /* gap: 10px; */
+        /* margin-right: 10%; */
     }
 
     .nav__link {
@@ -158,28 +161,32 @@ select {
     select {
         width: 70px;
         height: 25px;
-        margin-right: 0px;
+        /* margin-right: 10%; */
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     .nav__img {
-        width: 90px;
+        width: 100px;
         height: 77px;
         margin-left: 19px;
     }
 
     .nav__text {
         /* display: none; */
-        width: 130px;
+        width: 290px;
         height: 40px;
-        font-size: 10px;
+        font-size: 12px;
+        text-align: center;
+        margin-left: 6%;
     }
-
+    .nav__link{
+        font-size: 12px;
+    }
     .burger-button {
         justify-content: space-around;
         display: flex;
-        margin-left: 39%;
+        /* margin-left: 39%; */
         margin-top: 2.5%;
         width: 190px;
         font-size: 24px;
@@ -192,34 +199,47 @@ select {
         z-index: 10;
     }
     .nav__tel {
-        font-size: 16px;
+        display: none;
+        font-size: 12px;
         margin-right: -5px;
     }
     .nav__list {
-        display: none;
-        /* Yashirin qilish */
+        transform: scale(0);
         flex-direction: column;
         position: absolute;
         top: 100%;
         left: 60%;
-        width: 30%;
-        background: #6dcccc;
+        width: 20%;
+        background: rgb(244, 245, 247);
         padding: 10px;
-        transition: transform 0.3s ease;
-        /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
-        box-shadow: 2px 2px 2px #418E8B, 0 0 29px #418E8B, 0 0 5px #E9F5FF;
+        transition: transform 1s ease;
+        gap: 39px;
+         width: 290px;
+         height: 290px;
+         
     }
+    .nav__link{
+        font-size: 28px;
+        color: #418E8B;
+    }
+
     .nav__list--open {
-        display: flex;
+        transform: scaleX(1);
     }
     .navigate__box {
         display: flex;
     }
+    select{
+        font-size: 19px;
+        width: 120px;
+        height: 30px;
+    }
+   
 }
 @media (min-width: 375px) and (max-width: 576px) {
     .nav__img {
-        width: 70px; /* Rasmning kattaligi kichraytirilgan */
-        height: 60px; /* Rasmning kattaligi kichraytirilgan */
+        width: 100px; /* Rasmning kattaligi kichraytirilgan */
+        height: 50px; /* Rasmning kattaligi kichraytirilgan */
         margin-left: 15px; /* Rasmning chapdan chetlatilishi */
     }
 
@@ -227,6 +247,7 @@ select {
         width: 130px;
         height: 40px;
         font-size: 10px;
+        text-align: center;
     }
 
     .burger-button {
@@ -251,21 +272,28 @@ select {
     }
 
     .nav__list {
-        display: none; 
+        transform: scale(0);
         flex-direction: column;
-        position: absolute; 
-        top: 100%; 
-        left: 60%;
-        width: 40%;
-        background: #6dcccc; 
-        padding: 1px 0; 
-        transition: transform 0.3s ease;
-        box-shadow: 2px 2px 2px #418E8B, 0 0 29px #418E8B, 0 0 5px #E9F5FF; 
-        transform: translateX(-50%); 
+        position: absolute;
+        top: 100%;
+        /* left: 60%; */
+        width: 20%;
+        background: rgb(244, 245, 247);
+        padding: 10px;
+        transition: transform 1s ease;
+        gap: 39px;
+         width: 290px;
+         height: 290px;
+         
+    }
+    .nav__link{
+        font-size: 28px;
+        color: #418E8B;
     }
 
+
     .nav__list--open {
-        display: flex; 
+        transform: scaleX(1);
     }
 
     .navigate__box {
@@ -274,8 +302,11 @@ select {
         align-items: center;
     }
     .nav__link{
-        font-size: 12px;
+        font-size: 19px;
 
+    }
+    .nav__tel{
+        display: none;
     }
 }
 @media (min-width: 320px) and (max-width: 375px) {
@@ -311,17 +342,19 @@ select {
     }
 
     .nav__list {
-        display: none; /* Yashirin qilish */
-        flex-direction: column; /* Vertikal holatda menyu */
-        position: absolute; /* Navigatsiya menyusi o'z holatini saqlaydi */
-        top: 100%; /* Menyu navigatsiya panelining tagida joylashadi */
-        left: 60%; /* Menyu markazda joylashadi */
-        width: 50%; /* Menyu kengligi */
-        background: #6dcccc; /* Fon rangini o'zgartirish */
-        padding: 5px 0; /* Ichki masofa */
-        transition: transform 0.3s ease; /* Animatsiya o'zgarishi */
-        box-shadow: 2px 2px 2px #418E8B, 0 0 29px #418E8B, 0 0 5px #E9F5FF; /* Soyali ko'rinish */
-        transform: translateX(-50%); /* Menyuni markazga surish */
+        transform: scale(0);
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+       
+        /* width: 16%; */
+        background: rgb(244, 245, 247);
+        padding: 10px;
+        transition: transform 1s ease;
+        gap: 39px;
+         width: 250px;
+         height: 290px;
+         
     }
     .nav__item{
         padding: 0px;
@@ -329,7 +362,7 @@ select {
     }
 
     .nav__list--open {
-        display: flex;
+        transform: scaleX(1);
     }
 
     .navigate__box {
@@ -338,10 +371,12 @@ select {
     }
 
     .nav__link {
-        font-size: 10px;
+        font-size: 19px;
+        color: #418E8B;
        
     }
     .nav__tel{
+        display: none;
         font-size: 10px;
     }
     select{

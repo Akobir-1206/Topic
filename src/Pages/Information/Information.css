@@ -42,6 +42,7 @@ margin-left: 25%;
     .information__title {
         font-size: 28px;
          width: 400px;
+         padding-bottom: 8%;
     }
 }
 
@@ -52,7 +53,8 @@ margin-left: 25%;
     }
     .information__title {
         font-size: 23px;
-        width: 300px;
+        width: 380px;
+        padding-bottom: 3%;
         /* margin-right: 10%; */
         
     }
@@ -60,14 +62,16 @@ margin-left: 25%;
 
 @media (min-width: 375px) and (max-width: 576px) {
     .information__card {
-        flex-direction: column; 
         margin: 0 auto; 
         display: flex;
-        align-items: center;
+        margin-left: 10%;
     }
     .information__title {
-        font-size: 20px;
-       width: 260px;
+        font-size: 22px;
+       width: 200px;
+       height: 100px;
+       text-align: center;
+    
     }
 }
 
@@ -79,10 +83,10 @@ margin-left: 25%;
        
     }
     .information__card {
-        flex-direction: column; 
-        display: flex;
-        align-items: center;
-        
+        /* flex-direction: column;  */
+        /* display: flex; */
+        /* align-items: center; */
+        margin-left: 15%;
         /* margin: 0 auto;  */
         
     }
